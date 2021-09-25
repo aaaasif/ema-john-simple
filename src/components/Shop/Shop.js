@@ -20,7 +20,6 @@ const Shop = () => {
                     product={product}
                      >
                      </Product>)
-                    
                 }
             </div>
             <div className="cart-container">
