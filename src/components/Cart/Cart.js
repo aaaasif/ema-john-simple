@@ -1,5 +1,5 @@
 import React from 'react';
-import './Cart.css'
+import './  Cart.css'
 
 const Cart = (props) => {
     const {cart} = props;
