@@ -3,9 +3,9 @@ import logo from '../../images/logo.png'
 
 const Header = () => {
     return (
-        <div>
+        <div className="header">
             <h1>hello from header</h1>
-            <img src={logo} alt="" />
+            <img className="logo" src={logo} alt="" />
         </div>
     );
 };
