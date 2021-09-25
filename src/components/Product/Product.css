@@ -13,4 +13,6 @@
     height: 30px;
     border: 1px solid gray;
     border-radius: 5px;
+    cursor: pointer;
+    padding-bottom: 5px;
 }
