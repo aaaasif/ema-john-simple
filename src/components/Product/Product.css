@@ -7,3 +7,10 @@
     color: blue;
     font-weight: 400;
 }
+.btn-regular{
+    background-color: goldenrod;
+    width: 150px;
+    height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
