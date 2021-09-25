@@ -12,7 +12,7 @@ const Shop = () => {
     }, [])
 
     const handleAddToCart = (product) => {
-        console.log(product.name);
+        console.log('clicked');
     }
 
     return (
