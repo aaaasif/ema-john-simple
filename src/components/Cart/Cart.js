@@ -24,7 +24,7 @@ const Cart = (props) => {
             <p>shipping: {shipping.toFixed(2)}</p>
             <p>tax: {tax.toFixed(2)}</p>
             <p>Grand Total: {grandTotal.toFixed(2)}</p>
-            <button className='btn-praimary'>Review Your Order</button>
+            <button className='btn-regular'>Review Your Order</button>
          </div>
     );
 };
