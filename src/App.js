@@ -5,7 +5,7 @@ import header from './components/Header/Header';
 function App() {
   return (
     <div>
-      <header></header>
+      <git></git add .Header>
     </div>
   );
 }
