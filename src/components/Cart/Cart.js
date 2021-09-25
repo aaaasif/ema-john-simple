@@ -21,7 +21,7 @@ const Cart = (props) => {
              <h3>order summary</h3>
             <h5>item order: {props.cart.length}</h5>
             <p>Total: {total.toFixed(2)}</p>
-            <p>shipping: {shipping.toFixed(2)}</p>
+            <p>shipping: {shipping}</p>
             <p>tax: {tax.toFixed(2)}</p>
             <p>Grand Total: {grandTotal.toFixed(2)}</p>
             <button className='btn-regular'>Review Your Order</button>
