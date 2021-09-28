@@ -2,9 +2,9 @@
     text-align: center;
 }
 .logo{
-    height: 100px;
+    height: 50px;
 }
-.header nav{
+.header nav {
     background-color: black;
     line-height: 40px;
 }

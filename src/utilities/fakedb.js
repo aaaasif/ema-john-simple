@@ -19,6 +19,7 @@ const addToDb = id => {
 }
 
 const getDb = () => localStorage.getItem('shopping_cart');
+
 const updateDb = cart => {
   localStorage.setItem('shopping_cart', JSON.stringify(cart));
 }
