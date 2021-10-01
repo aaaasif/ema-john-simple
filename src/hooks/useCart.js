@@ -12,6 +12,8 @@ const useCart = products =>{
                     if(addedProduct){
                         //set qantity
                         const quantity = saveCart[key];
+                        addedProduct.quantity = quantity;
+                        storedCart.push(addedProduct)
 
                     }
             }
