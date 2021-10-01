@@ -1,6 +1,7 @@
 import React from 'react';
 import useProducts from '../../hooks/useProducts';
 import usecart from '../../hooks/useCart'
+import Cart from '../Cart/Cart';
 
 
 const OrderRevew = () => {
@@ -11,6 +12,7 @@ const OrderRevew = () => {
             <h1>{products.length}</h1>
             <h2>{cart.length}</h2>
             <h1>kahini ki</h1>
+            <Cart></Cart>
         </div>
     );
 };
