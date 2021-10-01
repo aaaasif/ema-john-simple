@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header/Header';
+import NotFund from './components/NotFound/NotFund';
 import OrderRevew from './components/OrderRevew/OrderRevew';
 import Shop from './components/Shop/Shop';
 
@@ -19,7 +20,9 @@ function App() {
           <Route path="/review">
             <OrderRevew></OrderRevew>
           </Route>
-          
+          <Route path="*">
+            <NotFund></NotFund>
+          </Route>
         </Switch>
       </Router>
       <Shop></Shop>
