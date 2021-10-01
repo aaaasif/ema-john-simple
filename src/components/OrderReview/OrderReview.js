@@ -3,7 +3,7 @@ import useProducts from '../../hooks/useProducts';
 import useCart from '../../hooks/useCart';
 import Cart from '../Cart/Cart';
 import ReviewItem from '../ReviewItem/ReviewItem';
-// import { removeFromDb } from '../../utilities/fakedb';
+import { removeFromDb } from '../../utilities/fakedb';
 
 const OrderReview = () => {
     const [products] = useProducts();
@@ -12,7 +12,7 @@ const OrderReview = () => {
     const handleRemove = key => {
         const newCart = cart.filter(product => product.key !== key);
         setCart(newCart);
-        
+        removeFromDb(key);
     }
 
     return (

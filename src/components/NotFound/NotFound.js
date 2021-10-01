@@ -1,12 +1,12 @@
 import React from 'react';
 
-const NotFund = () => {
+const NotFound = () => {
     return (
         <div>
-            <h1>404 eror</h1>
-            <h1>tha page are you lokking for are not availavle</h1>
+            <h1>404</h1>
+            <h3>The page you are looking for is not available</h3>
         </div>
     );
 };
 
-export default NotFund;
+export default NotFound;
