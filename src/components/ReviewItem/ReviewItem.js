@@ -7,7 +7,7 @@ const ReviewItem = (props) => {
             <div>
                 <h4 className='product-name'>{name}</h4>
                 <p>price: {price}</p>
-                <p>only {quantity} in stock. <Strong>Order Now</Strong></p>
+                <p>only {quantity} in stock. Order Now</p>
                 <button className='btn-regular'>Remove</button>
             </div>
         </div>
