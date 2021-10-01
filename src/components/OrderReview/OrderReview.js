@@ -5,7 +5,7 @@ import usecart from '../../hooks/useCart'
 
 const OrderRevew = () => {
     const [products, setProducts] = useProducts();
-    const [cart] = usecart();
+    const [cart] = usecart(products);
     return (
         <div>
             <h1>{products.length}</h1>
