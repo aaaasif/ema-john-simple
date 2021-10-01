@@ -6,7 +6,9 @@ const useCart = products =>{
         if(products.length){
             const saveCart = getStoredCart();
             const storedCart = [];
-            
+            for(const key of saveCart){
+                const addedProduct =products.fing
+            }
         }
     } , [products])
 }
