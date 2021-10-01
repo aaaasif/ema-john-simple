@@ -12,7 +12,7 @@ const OrderRevew = () => {
             <h1>{products.length}</h1>
             <h2>{cart.length}</h2>
             <h1>kahini ki</h1>
-            <Cart></Cart>
+            <Cart cart={cart}></Cart>
         </div>
     );
 };
