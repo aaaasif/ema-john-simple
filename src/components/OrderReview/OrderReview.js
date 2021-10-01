@@ -1,34 +1,36 @@
 import React from 'react';
 import useProducts from '../../hooks/useProducts';
-import usecart from '../../hooks/useCart'
+import useCart from '../../hooks/useCart';
 import Cart from '../Cart/Cart';
 import ReviewItem from '../ReviewItem/ReviewItem';
+import { removeFromDb } from '../../utilities/fakedb';
 
+const OrderReview = () => {
+    const [products] = useProducts();
+    const [cart, setCart] = useCart(products);
 
-const OrderRevew = () => {
-    const [products, setProducts] = useProducts();
-    const [cart, setCart] = usecart(products);
     const handleRemove = key => {
-        const newCart = cart.filter(product => product.key !==key);
+        const newCart = cart.filter(product => product.key !== key);
         setCart(newCart);
+        removeFromDb(key);
     }
+
     return (
-        <div className='shop-container'>
-            <div className='products-container'>
+        <div className="shop-container">
+            <div className="product-container">
                 {
-                    cart.map(product=><ReviewItem
+                    cart.map(product => <ReviewItem
                         key={product.key}
-                         product={product}
-                         handleRemove={handleRemove}
-                         ></ReviewItem>)
+                        product={product}
+                        handleRemove={handleRemove}
+                    ></ReviewItem>)
                 }
             </div>
-            <div className='cart-container'>
+            <div className="cart-container">
                 <Cart cart={cart}></Cart>
             </div>
-            
         </div>
     );
 };
 
-export default OrderRevew;
+export default OrderReview;
