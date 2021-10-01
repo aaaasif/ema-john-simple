@@ -9,8 +9,12 @@ const OrderRevew = () => {
     const [cart] = usecart(products);
     return (
         <div className='shop-container'>
-            <div className='products-container'></div>
-            <div className='cart-container'></div>
+            <div className='products-container'>
+
+            </div>
+            <div className='cart-container'>
+                <Cart cart={cart}></Cart>
+            </div>
             
         </div>
     );
