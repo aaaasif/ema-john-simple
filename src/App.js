@@ -1,15 +1,16 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header/Header';
-import NotFund from './components/NotFound/NotFund';
-import OrderRevew from './components/OrderRevew/OrderRevew';
+import Inventory from './components/Inventory/Inventory';
+import NotFund from './components/NotFound/NotFound';
+import OrderRevew from './components/OrderReview/OrderReview';
 import Shop from './components/Shop/Shop';
 
 function App() {
   return (
     <div>
-      <Header></Header>
       <Router>
+        <Header></Header>
         <Switch>
           <Route exact path="/">
             <Shop></Shop>
@@ -20,12 +21,15 @@ function App() {
           <Route path="/review">
             <OrderRevew></OrderRevew>
           </Route>
+          <Route path="/inventory">
+            <Inventory></Inventory>
+          </Route>
           <Route path="*">
             <NotFund></NotFund>
           </Route>
         </Switch>
       </Router>
-      <Shop></Shop>
+
     </div>
   );
 }
