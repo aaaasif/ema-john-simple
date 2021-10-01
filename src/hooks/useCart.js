@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import {getStoreCart, getStoredCart} from '../utilities/fakedb'
+import {getStoredCart} from '../utilities/fakedb'
 const useCart = products =>{
     const [cart, setCart] = useState([])
     useEffect( () =>{
@@ -13,10 +13,11 @@ const useCart = products =>{
                         //set qantity
                         const quantity = saveCart[key];
                         addedProduct.quantity = quantity;
-                        storedCart.push(addedProduct)
+                        storedCart.push(addedProduct);
 
                     }
             }
+            setCart(storedCart);
         }
     } , [products])
 }
