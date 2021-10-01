@@ -18,7 +18,7 @@ function App() {
           <Route path="/shop">
             <Shop></Shop>
           </Route>
-          <Route path="/review">
+          <Route path="/reviews">
             <OrderRevew></OrderRevew>
           </Route>
           <Route path="/inventory">
