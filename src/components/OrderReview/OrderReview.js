@@ -15,6 +15,7 @@ const OrderRevew = () => {
                     cart.map(product=><ReviewItem
                         key={product.key}
                          product={product}
+                         handleRemove={handleRemove}
                          ></ReviewItem>)
                 }
             </div>

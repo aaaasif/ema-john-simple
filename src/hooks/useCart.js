@@ -22,7 +22,7 @@ const useCart = products =>{
         }
 
     } , [products])
-    return [cart];
+    return [cart, setCart];
 }
 
 export default useCart;
