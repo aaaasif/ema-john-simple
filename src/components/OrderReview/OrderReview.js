@@ -2,6 +2,7 @@ import React from 'react';
 import useProducts from '../../hooks/useProducts';
 import usecart from '../../hooks/useCart'
 import Cart from '../Cart/Cart';
+import ReviewItem from '../ReviewItem/ReviewItem';
 
 
 const OrderRevew = () => {
@@ -10,7 +11,9 @@ const OrderRevew = () => {
     return (
         <div className='shop-container'>
             <div className='products-container'>
-
+                {
+                    cart.map(product=><ReviewItem product={product}></ReviewItem>)
+                }
             </div>
             <div className='cart-container'>
                 <Cart cart={cart}></Cart>
