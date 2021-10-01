@@ -7,7 +7,11 @@ import ReviewItem from '../ReviewItem/ReviewItem';
 
 const OrderRevew = () => {
     const [products, setProducts] = useProducts();
-    const [cart] = usecart(products);
+    const [cart, setCart] = usecart(products);
+    const handleRemove = key => {
+        const newCart = cart.filter(product => product.key !==key);
+        setCart(newCart);
+    }
     return (
         <div className='shop-container'>
             <div className='products-container'>
