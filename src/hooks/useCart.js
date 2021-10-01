@@ -23,3 +23,5 @@ const useCart = products =>{
     } , [products])
     return [cart];
 }
+
+export default useCart;
