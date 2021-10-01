@@ -9,7 +9,11 @@ const useCart = products =>{
             for(const key of saveCart){
                 const addedProduct =products.find(product => product.
                     key === key);
-                    if(addedProduct)
+                    if(addedProduct){
+                        //set qantity
+                        const quantity = saveCart[key];
+
+                    }
             }
         }
     } , [products])
