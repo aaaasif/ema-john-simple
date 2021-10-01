@@ -10,3 +10,5 @@ const useProducts = () => {
     //return necessary thing's
     return [products];
 }
+
+export default useProducts;
