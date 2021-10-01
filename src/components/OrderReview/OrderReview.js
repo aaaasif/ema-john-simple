@@ -12,7 +12,10 @@ const OrderRevew = () => {
         <div className='shop-container'>
             <div className='products-container'>
                 {
-                    cart.map(product=><ReviewItem product={product}></ReviewItem>)
+                    cart.map(product=><ReviewItem
+                        key={product.key}
+                         product={product}
+                         ></ReviewItem>)
                 }
             </div>
             <div className='cart-container'>
