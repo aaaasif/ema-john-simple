@@ -7,7 +7,9 @@ const useCart = products =>{
             const saveCart = getStoredCart();
             const storedCart = [];
             for(const key of saveCart){
-                const addedProduct =products.fing
+                const addedProduct =products.find(product => product.
+                    key === key);
+                    if(addedProduct)
             }
         }
     } , [products])
