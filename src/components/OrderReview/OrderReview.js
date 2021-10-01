@@ -1,8 +1,11 @@
 import React from 'react';
 import useProducts from '../../hooks/useProducts';
+import usecart from '../../hooks/useCart'
+
 
 const OrderRevew = () => {
-    const [products] = useProducts();
+    const [products, setProducts] = useProducts();
+    const [cart] = usecart();
     return (
         <div>
             <h1>{products.length}</h1>
