@@ -7,4 +7,6 @@ const useProducts = () => {
         .then(res => res.json())
         .then(data => setProducts(data))
     }, []);
+    //return necessary thing's
+    return [products];
 }
