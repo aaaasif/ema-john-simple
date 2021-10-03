@@ -14,6 +14,11 @@ const OrderReview = () => {
         const newCart = cart.filter(product => product.key !== key);
         setCart(newCart);
         removeFromDb(key);
+        
+    }
+
+    const handlePlaceOrder = () =>{
+
     }
 
     return (
@@ -30,7 +35,7 @@ const OrderReview = () => {
             <div className="cart-container">
                 <Cart cart={cart}>
                     <Link to='/review'>
-                        <button  className='btn-regular'>place order</button>
+                        <button onClick={handlePlaceOrder} className='btn-regular'>place order</button>
                     </Link>
                 </Cart>
             </div>
