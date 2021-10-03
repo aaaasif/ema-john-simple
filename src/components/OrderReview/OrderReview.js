@@ -15,6 +15,7 @@ const OrderReview = () => {
         setCart(newCart);
         removeFromDb(key);
         
+
     }
 
     const handlePlaceOrder = () =>{
