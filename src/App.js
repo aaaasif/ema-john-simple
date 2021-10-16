@@ -29,7 +29,7 @@ function App() {
           <Route path="/placeorder">
             <PlaceOrder></PlaceOrder>
           </Route>
-          <Route path="login">
+          <Route path="/login">
             <Login></Login>
           </Route>
           <Route path="*">
