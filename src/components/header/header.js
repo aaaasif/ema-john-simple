@@ -1,9 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import useAuth from '../../hooks/UseFirebase';
+import useAuth from '../../hooks/useAuth';
 import logo from '../../images/logo.png';
 import './Header.css';
-
 
 
 const Header = () => {
