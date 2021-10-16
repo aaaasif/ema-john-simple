@@ -4,7 +4,7 @@ import './Login.css'
 
 const Login = () => {
     return (
-        <div className='login_form'>
+        <div className='login-form'>
             <div>
                 <h2>Login</h2>
                 <form onSubmit=''>
