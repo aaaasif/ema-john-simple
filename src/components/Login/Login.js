@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Login.css'
 
 const Login = () => {
     return (
-        <div>
+        <div className='login_form'>
             <div>
                 <h2>Login</h2>
                 <form onSubmit=''>
