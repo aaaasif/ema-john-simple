@@ -71,6 +71,12 @@ const Shop = () => {
                         >
                         </Product>)
                     }
+                    <div className='pagination'>
+                        {
+                            [...Array(pageCount).keys()]
+                            .map(number =><button>{number}</button>)
+                        }
+                    </div>
                 </div>
                 <div className="cart-container">
                     <Cart cart={cart}>
